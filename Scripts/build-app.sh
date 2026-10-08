@@ -7,7 +7,13 @@ set -eu
 
 cd "$(dirname "$0")/.."
 derived_data="$(mktemp -d)"
-trap 'rm -rf "$derived_data"' EXIT
+lsregister=/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister
+cleanup() {
+    # Xcode registers every built app with Launch Services, which leaves duplicates in System Settings
+    "$lsregister" -u "$derived_data/Build/Products/Release/Quick Symlink.app" 2>/dev/null || true
+    rm -rf "$derived_data"
+}
+trap cleanup EXIT
 
 set -- -project "Quick Symlink.xcodeproj" -scheme "Quick Symlink" -configuration Release -derivedDataPath "$derived_data"
 if [ -n "${DEVELOPMENT_TEAM:-}" ]; then
@@ -23,4 +29,5 @@ rm -rf "build/Quick Symlink.app"
 mkdir -p build
 ditto "$derived_data/Build/Products/Release/Quick Symlink.app" "build/Quick Symlink.app"
 codesign --verify --deep --strict "build/Quick Symlink.app"
+"$lsregister" -u "build/Quick Symlink.app" 2>/dev/null || true
 echo "Built build/Quick Symlink.app"
