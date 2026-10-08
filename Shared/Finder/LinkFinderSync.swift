@@ -93,9 +93,24 @@ class LinkFinderSync: FIFinderSync {
 
     private func menuItem(_ title: String, action: Selector?, symbolName: String, isEnabled: Bool = true) -> NSMenuItem {
         let item = NSMenuItem(title: title, action: action, keyEquivalent: "")
-        item.image = NSImage(systemSymbolName: symbolName, accessibilityDescription: nil)
+        item.image = menuImage(symbolName)
         item.isEnabled = isEnabled
         return item
+    }
+
+    /// Finder receives menu images from the extension without their template flag, so it draws
+    /// them as-is (black, even in Dark Mode). Bake in the label color of the current appearance instead.
+    private func menuImage(_ symbolName: String) -> NSImage? {
+        guard let symbol = NSImage(systemSymbolName: symbolName, accessibilityDescription: nil) else { return nil }
+
+        var color = NSColor.black
+        (NSApp?.effectiveAppearance ?? NSAppearance.currentDrawing()).performAsCurrentDrawingAppearance {
+            color = NSColor(cgColor: NSColor.labelColor.cgColor) ?? .black
+        }
+
+        let image = symbol.withSymbolConfiguration(NSImage.SymbolConfiguration(paletteColors: [color]))
+        image?.isTemplate = false
+        return image
     }
 
     // MARK: - Actions
