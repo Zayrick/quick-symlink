@@ -121,7 +121,7 @@ In order to install it is quite simple to:
    open "Quick Symlink.app"
    ```
 
-4. Click "Open Finder Extension Settings…" in the app window (or open `System Settings > General > Login Items & Extensions > Finder`) and enable the follows extensions:
+4. Click "Open Extension Settings…" in the app window (or open `System Settings > General > Login Items & Extensions`), click ⓘ next to `Quick Symlink` and enable the follows extensions:
   4.1. `Symbolic Link Actions` - for the symlink actions.
   4.2. `Hard Link Actions` - for the hard link actions.
 

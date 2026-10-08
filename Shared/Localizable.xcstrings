@@ -69,6 +69,23 @@
         }
       }
     },
+    "In Extensions, click ⓘ next to Quick Symlink and turn on its Finder extensions." : {
+      "comment" : "App window: hint on macOS 15 and later",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "В разделе «Расширения» нажмите ⓘ рядом с Quick Symlink и включите его расширения Finder."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "在「扩展」中点按 Quick Symlink 旁边的 ⓘ，然后打开它的访达扩展。"
+          }
+        }
+      }
+    },
     "Make Link" : {
       "comment" : "Create a link to each selected item next to it",
       "localizations" : {
@@ -103,19 +120,19 @@
         }
       }
     },
-    "Open Finder Extension Settings…" : {
+    "Open Extension Settings…" : {
       "comment" : "App window: button",
       "localizations" : {
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Открыть настройки расширений Finder…"
+            "value" : "Открыть настройки расширений…"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "打开访达扩展设置…"
+            "value" : "打开扩展设置…"
           }
         }
       }
