@@ -28,16 +28,7 @@ public class ReplaceWithLinkAction: Action {
             return;
         }
         
-        let pasteboard = NSPasteboard.init(name: NSPasteboard.Name.init(rawValue: "qs"));
-        let pathsFromClipboard = pasteboard.string(forType: NSPasteboard.PasteboardType.string) ?? "";
-        if pathsFromClipboard.isEmpty {
-            return;
-        }
-        pasteboard.clearContents();
-        
-        let paths = pathsFromClipboard.components(separatedBy: ";");
-        for path in paths {
-            let pathUrl = URL(fileURLWithPath: path);
+        for pathUrl in LinkSourcePasteboard.take() {
             let targetPath = self.fileLinkManager.getTargetPath(pathUrl, to: target);
             self.fileLinkManager.replaceWith(of: pathUrl, with: targetPath);
         }

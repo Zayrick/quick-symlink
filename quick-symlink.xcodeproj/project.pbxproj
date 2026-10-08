@@ -23,11 +23,13 @@
 		A30D4A4A26A0C14400BA775B /* CopyPathAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9C126A0B30F004FBF0F /* CopyPathAction.swift */; };
 		A30D4A4B26A0C14400BA775B /* PasteLinkAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9C426A0B49C004FBF0F /* PasteLinkAction.swift */; };
 		A30D4A4C26A0C14400BA775B /* ReplaceWithLinkAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9C726A0B552004FBF0F /* ReplaceWithLinkAction.swift */; };
+		A3F1A00326F5000000C0FFEE /* LinkSourcePasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1A00126F5000000C0FFEE /* LinkSourcePasteboard.swift */; };
 		A30D4A4D26A0C18B00BA775B /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9BE26A0B200004FBF0F /* Action.swift */; };
 		A316477726B7B403001DD969 /* CreateLinkAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316477626B7B403001DD969 /* CreateLinkAction.swift */; };
 		A316477826B7B403001DD969 /* CreateLinkAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A316477626B7B403001DD969 /* CreateLinkAction.swift */; };
 		A31904A426E104FA00D7F69D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A31904A326E104FA00D7F69D /* Assets.xcassets */; };
 		A32EE8E0265D4D05008648AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A32EE8DF265D4D05008648AA /* Assets.xcassets */; };
+		A3F1A00226F5000000C0FFEE /* LinkSourcePasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1A00126F5000000C0FFEE /* LinkSourcePasteboard.swift */; };
 		A345C9BF26A0B200004FBF0F /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9BE26A0B200004FBF0F /* Action.swift */; };
 		A345C9C226A0B30F004FBF0F /* CopyPathAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9C126A0B30F004FBF0F /* CopyPathAction.swift */; };
 		A345C9C526A0B49C004FBF0F /* PasteLinkAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9C426A0B49C004FBF0F /* PasteLinkAction.swift */; };
@@ -49,6 +51,7 @@
 		A3E4D35526E0FD2900C9F175 /* FinderSync.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3E4D35426E0FD2900C9F175 /* FinderSync.swift */; };
 		A3E4D35A26E0FD2900C9F175 /* hard-link-actions-extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3E4D35226E0FD2900C9F175 /* hard-link-actions-extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A3E4D35E26E0FEE700C9F175 /* FileLinkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A36F9B0526DFAC27009E95CE /* FileLinkManager.swift */; };
+		A3F1A00426F5000000C0FFEE /* LinkSourcePasteboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3F1A00126F5000000C0FFEE /* LinkSourcePasteboard.swift */; };
 		A3E4D35F26E0FEEA00C9F175 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9BE26A0B200004FBF0F /* Action.swift */; };
 		A3E4D36026E0FEED00C9F175 /* CopyPathAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9C126A0B30F004FBF0F /* CopyPathAction.swift */; };
 		A3E4D36126E0FEEF00C9F175 /* PasteLinkAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A345C9C426A0B49C004FBF0F /* PasteLinkAction.swift */; };
@@ -117,6 +120,7 @@
 		A316477626B7B403001DD969 /* CreateLinkAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateLinkAction.swift; sourceTree = "<group>"; };
 		A31904A326E104FA00D7F69D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A32EE8DF265D4D05008648AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3F1A00126F5000000C0FFEE /* LinkSourcePasteboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkSourcePasteboard.swift; sourceTree = "<group>"; };
 		A345C9BE26A0B200004FBF0F /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		A345C9C126A0B30F004FBF0F /* CopyPathAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyPathAction.swift; sourceTree = "<group>"; };
 		A345C9C426A0B49C004FBF0F /* PasteLinkAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasteLinkAction.swift; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 			children = (
 				A307B41426D21DBE002EEF58 /* action */,
 				A36F9B0526DFAC27009E95CE /* FileLinkManager.swift */,
+				A3F1A00126F5000000C0FFEE /* LinkSourcePasteboard.swift */,
 			);
 			path = link;
 			sourceTree = "<group>";
@@ -495,6 +500,7 @@
 				A30B9AAD265CA63300ACAA63 /* ViewController.swift in Sources */,
 				A345C9C226A0B30F004FBF0F /* CopyPathAction.swift in Sources */,
 				A345C9BF26A0B200004FBF0F /* Action.swift in Sources */,
+				A3F1A00226F5000000C0FFEE /* LinkSourcePasteboard.swift in Sources */,
 				A35AF46726F51A0B009546C3 /* QuickSymlinkDefaults.swift in Sources */,
 				A30B9AAB265CA63300ACAA63 /* AppDelegate.swift in Sources */,
 				A34F677527B563570092BA64 /* Config.swift in Sources */,
@@ -515,6 +521,7 @@
 				A30D4A4C26A0C14400BA775B /* ReplaceWithLinkAction.swift in Sources */,
 				A316477826B7B403001DD969 /* CreateLinkAction.swift in Sources */,
 				A30D4A4D26A0C18B00BA775B /* Action.swift in Sources */,
+				A3F1A00326F5000000C0FFEE /* LinkSourcePasteboard.swift in Sources */,
 				A30D4A4A26A0C14400BA775B /* CopyPathAction.swift in Sources */,
 				A36F9B0726DFB127009E95CE /* FileLinkManager.swift in Sources */,
 				A34F677627B563570092BA64 /* Config.swift in Sources */,
@@ -532,6 +539,7 @@
 				A3E4D35526E0FD2900C9F175 /* FinderSync.swift in Sources */,
 				A3E4D36026E0FEED00C9F175 /* CopyPathAction.swift in Sources */,
 				A3E4D35F26E0FEEA00C9F175 /* Action.swift in Sources */,
+				A3F1A00426F5000000C0FFEE /* LinkSourcePasteboard.swift in Sources */,
 				A3E4D36126E0FEEF00C9F175 /* PasteLinkAction.swift in Sources */,
 				A3E4D36526E0FF8600C9F175 /* Path.swift in Sources */,
 				A3E4D35E26E0FEE700C9F175 /* FileLinkManager.swift in Sources */,

@@ -29,20 +29,6 @@ public class CopyPathAction: Action {
             target.append(self.finderController.targetedURL()!);
         }
         
-        // Append all selected paths to string
-        var paths = ""
-        for path in target {
-            paths.append(contentsOf: path.relativePath);
-            paths.append(";");
-        }
-        
-        if (!paths.isEmpty) {
-            paths.removeLast();
-        }
-        
-        //Copy path list to clipboard
-        let pasteboard = NSPasteboard.init(name: NSPasteboard.Name.init(rawValue: "qs"));
-        pasteboard.declareTypes([NSPasteboard.PasteboardType.string], owner: nil);
-        pasteboard.setString(paths, forType: NSPasteboard.PasteboardType.string);
+        LinkSourcePasteboard.remember(target);
     }
 }

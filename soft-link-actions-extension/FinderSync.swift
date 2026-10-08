@@ -100,7 +100,7 @@ class FinderSync: FIFinderSync {
         );
         quickSymlinkMenu.addItem(replaceFileWithSymlinkFromClipboardMenuItem);
         
-        if (NSPasteboard.init(name: NSPasteboard.Name.init(rawValue: "qs")).string(forType: NSPasteboard.PasteboardType.string) ?? "").isEmpty {
+        if !LinkSourcePasteboard.hasItems() {
             pastleSymlinkFromClipboardMenuItem.isEnabled = false;
             replaceFileWithSymlinkFromClipboardMenuItem.isEnabled = false;
         }
