@@ -6,29 +6,29 @@
  Copyright © 2021 Alexander A. Kropotin. All rights reserved.
  */
 
-/* Class = "NSMenuItem"; */
-"SOFT_LINK_ACTIONS_EXTENTION_NAME" = "Actions with symlinks";
+/* Finder context menu: submenu title for symbolic link actions */
+"SOFT_LINK_ACTIONS_EXTENTION_NAME" = "Symbolic Links";
 
-/* Class = "NSMenuItem"; */
-"SOFT_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Create symlinks for selected files and folders";
+/* Finder toolbar: tooltip for symbolic link actions */
+"SOFT_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Create symbolic links to the selected items";
 
-/* Class = "NSMenuItem"; */
-"HARD_LINK_ACTIONS_EXTENTION_NAME" = "Actions with hard links";
+/* Finder context menu: submenu title for hard link actions */
+"HARD_LINK_ACTIONS_EXTENTION_NAME" = "Hard Links";
 
-/* Class = "NSMenuItem"; */
-"HARD_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Create hard links for selected files and folders";
+/* Finder toolbar: tooltip for hard link actions */
+"HARD_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Create hard links to the selected items";
 
-/* Class = "NSMenuItem"; */
-"COPY_PATH_ACTION_NAME" = "Copy path from here";
+/* Remember the selected items as the source for a link to be pasted later */
+"COPY_PATH_ACTION_NAME" = "Copy as Link Source";
 
-/* Class = "NSMenuItem"; */
-"PASTE_LINK_ACTION_NAME" = "Paste link to here";
+/* Create links to the copied items in the current folder */
+"PASTE_LINK_ACTION_NAME" = "Paste Link";
 
-/* Class = "NSMenuItem"; */
-"REPLACE_WITH_LINK_ACTION_NAME" = "Move here and replace with link";
+/* Move the copied items into the current folder and leave links in their original location */
+"REPLACE_WITH_LINK_ACTION_NAME" = "Move Here and Leave Link";
 
-/* Class = "NSMenuItem"; */
-"CREATE_LINK_ACTION_NAME" = "Create link";
+/* Create a link to each selected item next to it */
+"CREATE_LINK_ACTION_NAME" = "Make Link";
 
-/* Class = "NSMenuItem"; */
-"PATH_STRATEGY_OPTION" = "Use relative path";
+/* Toggle: create symbolic links with relative instead of absolute paths */
+"PATH_STRATEGY_OPTION" = "Use Relative Paths";

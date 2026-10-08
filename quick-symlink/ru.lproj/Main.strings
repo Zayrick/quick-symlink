@@ -394,3 +394,6 @@
 
 /* Class = "NSMenuItem"; title = "Show Substitutions"; ObjectID = "z6F-FW-3nz"; */
 "z6F-FW-3nz.title" = "Show Substitutions";
+
+/* Class = "NSButtonCell"; title = "Use relative paths for symbolic links"; ObjectID = "zpj-SC-3KW"; */
+"zpj-SC-3KW.title" = "Использовать относительные пути для символических ссылок";

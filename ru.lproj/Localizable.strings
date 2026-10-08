@@ -1,34 +1,34 @@
 /*
  Localizable.strings
  quick-symlink
- 
+
  Created by Alexander A. Kropotin on 15/07/2021.
  Copyright © 2021 Alexander A. Kropotin. All rights reserved.
  */
 
-/* Class = "NSMenuItem"; */
-"SOFT_LINK_ACTIONS_EXTENTION_NAME" = "Действия с симлинками";
+/* Finder context menu: submenu title for symbolic link actions */
+"SOFT_LINK_ACTIONS_EXTENTION_NAME" = "Символические ссылки";
 
-/* Class = "NSMenuItem"; */
-"SOFT_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Создать символьные ссылки для выбранных файлов и папок";
+/* Finder toolbar: tooltip for symbolic link actions */
+"SOFT_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Создать символические ссылки на выбранные объекты";
 
-/* Class = "NSMenuItem"; */
-"HARD_LINK_ACTIONS_EXTENTION_NAME" = "Действия с жесткими ссылками";
+/* Finder context menu: submenu title for hard link actions */
+"HARD_LINK_ACTIONS_EXTENTION_NAME" = "Жёсткие ссылки";
 
-/* Class = "NSMenuItem"; */
-"HARD_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Создать жесткие ссылки для выбранных файлов и папок";
+/* Finder toolbar: tooltip for hard link actions */
+"HARD_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Создать жёсткие ссылки на выбранные объекты";
 
-/* Class = "NSMenuItem"; */
-"COPY_PATH_ACTION_NAME" = "Скопировать путь отсюда";
+/* Remember the selected items as the source for a link to be pasted later */
+"COPY_PATH_ACTION_NAME" = "Скопировать как источник ссылки";
 
-/* Class = "NSMenuItem"; */
-"PASTE_LINK_ACTION_NAME" = "Вставить ссылку сюда";
+/* Create links to the copied items in the current folder */
+"PASTE_LINK_ACTION_NAME" = "Вставить ссылку";
 
-/* Class = "NSMenuItem"; */
-"REPLACE_WITH_LINK_ACTION_NAME" = "Переместить сюда и заменить ссылкой";
+/* Move the copied items into the current folder and leave links in their original location */
+"REPLACE_WITH_LINK_ACTION_NAME" = "Переместить сюда и оставить ссылку";
 
-/* Class = "NSMenuItem"; */
+/* Create a link to each selected item next to it */
 "CREATE_LINK_ACTION_NAME" = "Создать ссылку";
 
-/* Class = "NSMenuItem"; */
-"PATH_STRATEGY_OPTION" = "Использовать относительный путь";
+/* Toggle: create symbolic links with relative instead of absolute paths */
+"PATH_STRATEGY_OPTION" = "Использовать относительные пути";

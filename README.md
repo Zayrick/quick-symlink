@@ -141,7 +141,7 @@ pluginkit -r quick-symlink.app/Contents/PlugIns/quick-symlink-extension.appex/
 pluginkit -r quick-symlink.app/Contents/PlugIns/hard-link-action-extension.appex/
 ```
 
-5. [OPTIONAL] Check/Uncheck the checkbox on the Application window "Use relative path for symlink" to use the relative path instead absolute path for the creating symlinks. **By default it's enabled**
+5. [OPTIONAL] Check/Uncheck the checkbox on the Application window "Use relative paths for symbolic links" to use the relative path instead absolute path for the creating symlinks. **By default it's enabled**
 
 <img src="https://github.com/ololx/quick-symlink/blob/assets/use-relative.png?raw=true" width="30%"/>
 
@@ -168,44 +168,44 @@ This tool allows to:
     <summary>Create symlinks in the current directory</summary>
 1. Select folders or files for which a symbolic link is needed.<br/>
 2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Symlink actions --> Create symlink for`.<br/>
+3. Select menu item `Symbolic Links --> Make Link`.<br/>
 </details>
 
 <details close>
     <summary>Create symlinks in another directory</summary>
 1. Select folders or files for which a symbolic link is needed.<br/>
 2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Symlink actions --> Copy path from here`.<br/>
+3. Select menu item `Symbolic Links --> Copy as Link Source`.<br/>
 4. Go to a destination folder.<br/>
 5. Call the contextual menu by right-clicking on the filder.<br/>
-6. Select menu item `Symlink actions --> Paste to here`.<br/>
+6. Select menu item `Symbolic Links --> Paste Link`.<br/>
 </details>
 
 <details close>
     <summary>Replace objects with symbolic links</summary>
 1. Select folders or files for which a symbolic link is needed.<br/>
 2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Symlink actions --> Copy to clipboard`.<br/>
+3. Select menu item `Symbolic Links --> Copy as Link Source`.<br/>
 4. Go to a destination folder.<br/>
 5. Call the contextual menu by right-clicking on the filder.<br/>
-6. Select menu item `Symlink actions --> Move it here and replace with a link`.<br/>
+6. Select menu item `Symbolic Links --> Move Here and Leave Link`.<br/>
 </details>
 
 <details close>
     <summary>Create hard links in the current directory</summary>
 1. Select folders or files for which a symbolic link is needed.<br/>
 2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Hard link actions --> Create symlink for`.<br/>
+3. Select menu item `Hard Links --> Make Link`.<br/>
 </details>
 
 <details close>
     <summary>Create symlinks in another directory</summary>
 1. Select folders or files for which a symbolic link is needed.<br/>
 2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Hard link actions --> Copy path from here`.<br/>
+3. Select menu item `Hard Links --> Copy as Link Source`.<br/>
 4. Go to a destination folder.<br/>
 5. Call the contextual menu by right-clicking on the filder.<br/>
-6. Select menu item `Hard link actions --> Paste to here`.<br/>
+6. Select menu item `Hard Links --> Paste Link`.<br/>
 </details>
 
 ## 🛠 Built With

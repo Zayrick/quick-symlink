@@ -74,33 +74,31 @@ class FinderSync: FIFinderSync {
         // Produce a menu for the extension (to be shown when right clicking a folder in Finder)
         let quickSymlinkMenu = NSMenu(title: "");
         
-        quickSymlinkMenu.insertItem(
-            withTitle: NSLocalizedString("CREATE_LINK_ACTION_NAME", comment: ""),
+        quickSymlinkMenu.addItem(self.menuItem(
+            title: NSLocalizedString("CREATE_LINK_ACTION_NAME", comment: ""),
             action: #selector(createSymlink(_:)),
-            keyEquivalent: "",
-            at: 0
-        );
+            symbolName: "link.badge.plus"
+        ));
         
-        quickSymlinkMenu.insertItem(
-            withTitle: NSLocalizedString("COPY_PATH_ACTION_NAME", comment: ""),
+        quickSymlinkMenu.addItem(self.menuItem(
+            title: NSLocalizedString("COPY_PATH_ACTION_NAME", comment: ""),
             action: #selector(copyPathToClipboard(_:)),
-            keyEquivalent: "",
-            at: 1
-        );
+            symbolName: "doc.on.doc"
+        ));
         
-        let pastleSymlinkFromClipboardMenuItem = NSMenuItem.init(
+        let pastleSymlinkFromClipboardMenuItem = self.menuItem(
             title: NSLocalizedString("PASTE_LINK_ACTION_NAME", comment: ""),
             action: #selector(pastleSymlinkFromClipboard(_:)),
-            keyEquivalent: ""
+            symbolName: "doc.on.clipboard"
         );
-        quickSymlinkMenu.insertItem(pastleSymlinkFromClipboardMenuItem, at: 2);
+        quickSymlinkMenu.addItem(pastleSymlinkFromClipboardMenuItem);
         
-        let replaceFileWithSymlinkFromClipboardMenuItem = NSMenuItem.init(
+        let replaceFileWithSymlinkFromClipboardMenuItem = self.menuItem(
             title: NSLocalizedString("REPLACE_WITH_LINK_ACTION_NAME", comment: ""),
             action: #selector(replaceFileWithSymlinkFromClipboard(_:)),
-            keyEquivalent: ""
+            symbolName: "arrow.right.doc.on.clipboard"
         );
-        quickSymlinkMenu.insertItem(replaceFileWithSymlinkFromClipboardMenuItem, at: 3);
+        quickSymlinkMenu.addItem(replaceFileWithSymlinkFromClipboardMenuItem);
         
         if (NSPasteboard.init(name: NSPasteboard.Name.init(rawValue: "qs")).string(forType: NSPasteboard.PasteboardType.string) ?? "").isEmpty {
             pastleSymlinkFromClipboardMenuItem.isEnabled = false;
@@ -122,16 +120,26 @@ class FinderSync: FIFinderSync {
             return quickSymlinkMenu;
         } else {
             let quickSymLinkMainMenu = NSMenu(title: "");
-            let quickSymlinkMenuItem = NSMenuItem(
-                title:  NSLocalizedString("SOFT_LINK_ACTIONS_EXTENTION_NAME", comment: ""),
+            let quickSymlinkMenuItem = self.menuItem(
+                title: NSLocalizedString("SOFT_LINK_ACTIONS_EXTENTION_NAME", comment: ""),
                 action: nil,
-                keyEquivalent: ""
+                symbolName: "link"
             );
             quickSymLinkMainMenu.setSubmenu(quickSymlinkMenu, for: quickSymlinkMenuItem);
             quickSymLinkMainMenu.addItem(quickSymlinkMenuItem);
             
             return quickSymLinkMainMenu;
         }
+    }
+    
+    // Creates a menu item with an SF Symbol icon (macOS 11+; older systems show no icon)
+    private func menuItem(title: String, action: Selector?, symbolName: String) -> NSMenuItem {
+        let item = NSMenuItem.init(title: title, action: action, keyEquivalent: "");
+        if #available(OSX 11.0, *) {
+            item.image = NSImage(systemSymbolName: symbolName, accessibilityDescription: nil);
+        }
+        
+        return item;
     }
     
     @IBAction func copyPathToClipboard(_ sender: AnyObject?) {

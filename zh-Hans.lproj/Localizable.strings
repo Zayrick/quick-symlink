@@ -7,28 +7,28 @@
  */
 
 /* Finder context menu: submenu title for symbolic link actions */
-"SOFT_LINK_ACTIONS_EXTENTION_NAME" = "Symbolic Links";
+"SOFT_LINK_ACTIONS_EXTENTION_NAME" = "符号链接";
 
 /* Finder toolbar: tooltip for symbolic link actions */
-"SOFT_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Create symbolic links to the selected items";
+"SOFT_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "为所选项目创建符号链接";
 
 /* Finder context menu: submenu title for hard link actions */
-"HARD_LINK_ACTIONS_EXTENTION_NAME" = "Hard Links";
+"HARD_LINK_ACTIONS_EXTENTION_NAME" = "硬链接";
 
 /* Finder toolbar: tooltip for hard link actions */
-"HARD_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Create hard links to the selected items";
+"HARD_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "为所选项目创建硬链接";
 
 /* Remember the selected items as the source for a link to be pasted later */
-"COPY_PATH_ACTION_NAME" = "Copy as Link Source";
+"COPY_PATH_ACTION_NAME" = "拷贝为链接源";
 
 /* Create links to the copied items in the current folder */
-"PASTE_LINK_ACTION_NAME" = "Paste Link";
+"PASTE_LINK_ACTION_NAME" = "粘贴链接";
 
 /* Move the copied items into the current folder and leave links in their original location */
-"REPLACE_WITH_LINK_ACTION_NAME" = "Move Here and Leave Link";
+"REPLACE_WITH_LINK_ACTION_NAME" = "移到此处并保留链接";
 
 /* Create a link to each selected item next to it */
-"CREATE_LINK_ACTION_NAME" = "Make Link";
+"CREATE_LINK_ACTION_NAME" = "制作链接";
 
 /* Toggle: create symbolic links with relative instead of absolute paths */
-"PATH_STRATEGY_OPTION" = "Use Relative Paths";
+"PATH_STRATEGY_OPTION" = "使用相对路径";

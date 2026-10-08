@@ -73,22 +73,22 @@ class FinderSync: FIFinderSync {
     override func menu(for menuKind: FIMenuKind) -> NSMenu {
         // Produce a menu for the extension (to be shown when right clicking a folder in Finder)
         let quickSymlinkMenu = NSMenu(title: "");
-        quickSymlinkMenu.addItem(
-            withTitle: NSLocalizedString("CREATE_LINK_ACTION_NAME", comment: ""),
+        quickSymlinkMenu.addItem(self.menuItem(
+            title: NSLocalizedString("CREATE_LINK_ACTION_NAME", comment: ""),
             action: #selector(createSymlink(_:)),
-            keyEquivalent: ""
-        );
+            symbolName: "link.badge.plus"
+        ));
         
-        quickSymlinkMenu.addItem(
-            withTitle: NSLocalizedString("COPY_PATH_ACTION_NAME", comment: ""),
+        quickSymlinkMenu.addItem(self.menuItem(
+            title: NSLocalizedString("COPY_PATH_ACTION_NAME", comment: ""),
             action: #selector(copyPathToClipboard(_:)),
-            keyEquivalent: ""
-        );
+            symbolName: "doc.on.doc"
+        ));
         
-        let pastleSymlinkFromClipboardMenuItem = NSMenuItem.init(
+        let pastleSymlinkFromClipboardMenuItem = self.menuItem(
             title: NSLocalizedString("PASTE_LINK_ACTION_NAME", comment: ""),
             action: #selector(pastleSymlinkFromClipboard(_:)),
-            keyEquivalent: ""
+            symbolName: "doc.on.clipboard"
         );
         quickSymlinkMenu.addItem(pastleSymlinkFromClipboardMenuItem);
         
@@ -100,15 +100,24 @@ class FinderSync: FIFinderSync {
             return quickSymlinkMenu;
         } else {
             let quickSymLinkMainMenu = NSMenu(title: "");
-            let quickSymlinkMenuItem = NSMenuItem(
-                title:  NSLocalizedString("" + "HARD_LINK_ACTIONS_EXTENTION_NAME", comment: ""),
+            let quickSymlinkMenuItem = self.menuItem(
+                title: NSLocalizedString("HARD_LINK_ACTIONS_EXTENTION_NAME", comment: ""),
                 action: nil,
-                keyEquivalent: ""
+                symbolName: "link.circle"
             );
             quickSymLinkMainMenu.setSubmenu(quickSymlinkMenu, for: quickSymlinkMenuItem);
             quickSymLinkMainMenu.addItem(quickSymlinkMenuItem);
             return quickSymLinkMainMenu;
         }
+    }
+    
+    // Creates a menu item with an SF Symbol icon (macOS 11+; older systems show no icon)
+    private func menuItem(title: String, action: Selector?, symbolName: String) -> NSMenuItem {
+        let item = NSMenuItem.init(title: title, action: action, keyEquivalent: "")
+        if #available(OSX 11.0, *) {
+            item.image = NSImage(systemSymbolName: symbolName, accessibilityDescription: nil)
+        }
+        return item
     }
     
     @IBAction func copyPathToClipboard(_ sender: AnyObject?) {
