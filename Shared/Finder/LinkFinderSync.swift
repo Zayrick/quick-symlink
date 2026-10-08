@@ -69,14 +69,14 @@ class LinkFinderSync: FIFinderSync {
                 isEnabled: hasCopiedFiles
             ))
 
+            // Shows its state with the icon rather than a checkmark: a checkmark would make the
+            // menu reserve a checkmark column, leaving an empty gap in front of every item
             menu.addItem(.separator())
-            let relativePathsItem = NSMenuItem(
-                title: NSLocalizedString("Use Relative Paths", comment: "Toggle: create symbolic links with relative instead of absolute paths"),
+            menu.addItem(menuItem(
+                NSLocalizedString("Use Relative Paths", comment: "Toggle: create symbolic links with relative instead of absolute paths"),
                 action: #selector(toggleRelativePaths(_:)),
-                keyEquivalent: ""
-            )
-            relativePathsItem.state = Settings.useRelativePaths ? .on : .off
-            menu.addItem(relativePathsItem)
+                symbolName: Settings.useRelativePaths ? "checkmark.circle" : "circle"
+            ))
         }
 
         if menuKind == .toolbarItemMenu {
