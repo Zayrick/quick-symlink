@@ -25,7 +25,6 @@ xcuserdata
 *.moved-aside
 *.xcuserstate
 *.xcscmblueprint
-*.xcscheme
 
 ########### Mac OS X ###########
 # Mac OS X temporary files that should never be committed

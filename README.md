@@ -95,8 +95,8 @@ Before using it, make sure that follows software are installed on the local mach
 
 If any of the listed programs is not installed, then it can be installed by instruction as described below.
 
-1. #### OS X 10.10+
-    - Install macOS 10.10+  by [this](https://support.apple.com/ht201372) instruction.
+1. #### macOS 12+
+    - Install macOS 12+ by [this](https://support.apple.com/ht201372) instruction.
 
 ### Installing
 
@@ -114,36 +114,58 @@ In order to install it is quite simple to:
 
 3. Launch the tool in macOS (optionally):
 
-   - via double-click on `quick-symlink.app`.
+   - via double-click on `Quick Symlink.app`.
    - via Terminal prompt.
 
    ```bash
-   open quick-symlink.app
+   open "Quick Symlink.app"
    ```
 
-4. Open up `System Preferences > Extensions` and enable the follows extensions:
-  4.1. `quick-symlink-extension` - for the symlink actions.
-  4.2. `hard-link-actions-extension` - for the hard link actions.
+4. Click "Open Finder Extension Settings…" in the app window (or open `System Settings > General > Login Items & Extensions > Finder`) and enable the follows extensions:
+  4.1. `Symbolic Link Actions` - for the symlink actions.
+  4.2. `Hard Link Actions` - for the hard link actions.
 
 **Otherwise, it's possible to install and remove the extention using the actual extension bundled into the app.**
 
 1. To install and approve the extension, run this:
 
 ```bash
-pluginkit -a quick-symlink.app/Contents/PlugIns/quick-symlink-extension.appex/
-pluginkit -a quick-symlink.app/Contents/PlugIns/hard-link-action-extension.appex/
+pluginkit -a "Quick Symlink.app/Contents/PlugIns/SymbolicLinkExtension.appex/"
+pluginkit -a "Quick Symlink.app/Contents/PlugIns/HardLinkExtension.appex/"
 ```
 
 2. To remove it, run this:
 
 ```bash
-pluginkit -r quick-symlink.app/Contents/PlugIns/quick-symlink-extension.appex/
-pluginkit -r quick-symlink.app/Contents/PlugIns/hard-link-action-extension.appex/
+pluginkit -r "Quick Symlink.app/Contents/PlugIns/SymbolicLinkExtension.appex/"
+pluginkit -r "Quick Symlink.app/Contents/PlugIns/HardLinkExtension.appex/"
 ```
 
 5. [OPTIONAL] Check/Uncheck the checkbox on the Application window "Use relative paths for symbolic links" to use the relative path instead absolute path for the creating symlinks. **By default it's enabled**
 
 <img src="https://github.com/ololx/quick-symlink/blob/assets/use-relative.png?raw=true" width="30%"/>
+
+### Building
+
+Open `Quick Symlink.xcodeproj` in Xcode 16+ and run the `Quick Symlink` scheme, or build a Release app into `build/` from the Terminal:
+
+```bash
+Scripts/build-app.sh                                 # signed to run on this Mac only
+DEVELOPMENT_TEAM=<your team ID> Scripts/build-app.sh # signed with your Apple Development certificate
+```
+
+The project is organized as follows:
+
+```
+App/                  the app: settings window
+Extensions/
+  SymbolicLink/       Finder extension for symbolic links
+  HardLink/           Finder extension for hard links
+Shared/               code and strings used by the app and both extensions
+  Finder/             Finder menu, toolbar item and copied files
+  Links/              link creation and relative paths
+Tests/                unit tests
+```
 
 ### Downloading
 

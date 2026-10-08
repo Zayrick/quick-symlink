@@ -1,0 +1,193 @@
+{
+  "sourceLanguage" : "en",
+  "strings" : {
+    "Create hard links to the selected items" : {
+      "comment" : "Finder toolbar item tooltip",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создать жёсткие ссылки на выбранные объекты"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为所选项目创建硬链接"
+          }
+        }
+      }
+    },
+    "Create symbolic links to the selected items" : {
+      "comment" : "Finder toolbar item tooltip",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создать символические ссылки на выбранные объекты"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为所选项目创建符号链接"
+          }
+        }
+      }
+    },
+    "Enable the Quick Symlink extensions to use them from the Finder context menu." : {
+      "comment" : "App window: hint",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Включите расширения Quick Symlink, чтобы пользоваться ими в контекстном меню Finder."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "启用 Quick Symlink 的访达扩展后，即可在右键菜单中使用。"
+          }
+        }
+      }
+    },
+    "Hard Links" : {
+      "comment" : "Finder context menu: submenu title for hard link actions",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жёсткие ссылки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "硬链接"
+          }
+        }
+      }
+    },
+    "Make Link" : {
+      "comment" : "Create a link to each selected item next to it",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Создать ссылку"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "制作链接"
+          }
+        }
+      }
+    },
+    "Move Here and Leave Link" : {
+      "comment" : "Move the copied files into the current folder and leave links in their original location",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Переместить сюда и оставить ссылку"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "移到此处并保留链接"
+          }
+        }
+      }
+    },
+    "Open Finder Extension Settings…" : {
+      "comment" : "App window: button",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Открыть настройки расширений Finder…"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "打开访达扩展设置…"
+          }
+        }
+      }
+    },
+    "Paste Link" : {
+      "comment" : "Create links to the files copied with Command-C in the current folder",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вставить ссылку"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "粘贴链接"
+          }
+        }
+      }
+    },
+    "Symbolic Links" : {
+      "comment" : "Finder context menu: submenu title for symbolic link actions",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Символические ссылки"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "符号链接"
+          }
+        }
+      }
+    },
+    "Use Relative Paths" : {
+      "comment" : "Toggle: create symbolic links with relative instead of absolute paths",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использовать относительные пути"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "使用相对路径"
+          }
+        }
+      }
+    },
+    "Use relative paths for symbolic links" : {
+      "comment" : "App window: checkbox",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Использовать относительные пути для символических ссылок"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "为符号链接使用相对路径"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}
