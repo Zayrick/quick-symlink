@@ -174,21 +174,19 @@ This tool allows to:
 <details close>
     <summary>Create symlinks in another directory</summary>
 1. Select folders or files for which a symbolic link is needed.<br/>
-2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Symbolic Links --> Copy as Link Source`.<br/>
-4. Go to a destination folder.<br/>
-5. Call the contextual menu by right-clicking on the filder.<br/>
-6. Select menu item `Symbolic Links --> Paste Link`.<br/>
+2. Copy them with `⌘C`.<br/>
+3. Go to a destination folder.<br/>
+4. Call the contextual menu by right-clicking on the folder.<br/>
+5. Select menu item `Symbolic Links --> Paste Link`.<br/>
 </details>
 
 <details close>
     <summary>Replace objects with symbolic links</summary>
 1. Select folders or files for which a symbolic link is needed.<br/>
-2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Symbolic Links --> Copy as Link Source`.<br/>
-4. Go to a destination folder.<br/>
-5. Call the contextual menu by right-clicking on the filder.<br/>
-6. Select menu item `Symbolic Links --> Move Here and Leave Link`.<br/>
+2. Copy them with `⌘C`.<br/>
+3. Go to a destination folder.<br/>
+4. Call the contextual menu by right-clicking on the folder.<br/>
+5. Select menu item `Symbolic Links --> Move Here and Leave Link`.<br/>
 </details>
 
 <details close>
@@ -201,11 +199,10 @@ This tool allows to:
 <details close>
     <summary>Create symlinks in another directory</summary>
 1. Select folders or files for which a symbolic link is needed.<br/>
-2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Hard Links --> Copy as Link Source`.<br/>
-4. Go to a destination folder.<br/>
-5. Call the contextual menu by right-clicking on the filder.<br/>
-6. Select menu item `Hard Links --> Paste Link`.<br/>
+2. Copy them with `⌘C`.<br/>
+3. Go to a destination folder.<br/>
+4. Call the contextual menu by right-clicking on the folder.<br/>
+5. Select menu item `Hard Links --> Paste Link`.<br/>
 </details>
 
 ## 🛠 Built With

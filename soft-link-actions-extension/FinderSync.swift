@@ -13,7 +13,6 @@ class FinderSync: FIFinderSync {
     let quickSymlinkToolbarItemImage = NSImage(named:NSImage.Name(rawValue: "quick-symlink-toolbar-item-image"));
     var quickSymlinkDefaults: QuickSymlinkDefaults! = QuickSymlinkDefaults(key: "relative-path-strategy", defaultValue: true);
     
-    let copyPathAction = CopyPathAction.init();
     let pasteLinkAction = PasteLinkAction.init(fileLinkManager: SoftLinkManager.init());
     let replaceWithLinkAction = ReplaceWithLinkAction.init(fileLinkManager: SoftLinkManager.init());
     let createSymlink = CreateLinkAction.init(fileLinkManager: SoftLinkManager.init());
@@ -80,12 +79,6 @@ class FinderSync: FIFinderSync {
             symbolName: "link.badge.plus"
         ));
         
-        quickSymlinkMenu.addItem(self.menuItem(
-            title: NSLocalizedString("COPY_PATH_ACTION_NAME", comment: ""),
-            action: #selector(copyPathToClipboard(_:)),
-            symbolName: "doc.on.doc"
-        ));
-        
         let pastleSymlinkFromClipboardMenuItem = self.menuItem(
             title: NSLocalizedString("PASTE_LINK_ACTION_NAME", comment: ""),
             action: #selector(pastleSymlinkFromClipboard(_:)),
@@ -140,11 +133,6 @@ class FinderSync: FIFinderSync {
         }
         
         return item;
-    }
-    
-    @IBAction func copyPathToClipboard(_ sender: AnyObject?) {
-        
-        self.copyPathAction.execute();
     }
     
     @IBAction func replaceFileWithSymlinkFromClipboard(_ sender: AnyObject?) {

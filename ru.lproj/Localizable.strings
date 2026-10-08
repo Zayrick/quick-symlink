@@ -18,10 +18,7 @@
 /* Finder toolbar: tooltip for hard link actions */
 "HARD_LINK_ACTIONS_EXTENTION_TOOL_TIP" = "Создать жёсткие ссылки на выбранные объекты";
 
-/* Remember the selected items as the source for a link to be pasted later */
-"COPY_PATH_ACTION_NAME" = "Скопировать как источник ссылки";
-
-/* Create links to the copied items in the current folder */
+/* Create links to the files copied with Command-C in the current folder */
 "PASTE_LINK_ACTION_NAME" = "Вставить ссылку";
 
 /* Move the copied items into the current folder and leave links in their original location */
