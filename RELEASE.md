@@ -17,6 +17,7 @@ Quick Symlink has been rebuilt from the ground up for current versions of macOS.
 - **Move Here and Leave Link** puts the item back if the link can't be created.
 - Menu and toolbar icons use SF Symbols and follow Light and Dark Mode.
 - New app icon and a simpler settings window.
+- New bundle identifier: turn the Finder extensions on again after updating. Earlier settings are not carried over.
 
 ### Removed
 

@@ -24,11 +24,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - `Move Here and Leave Link` moves the item back if the link can't be created.
 - Use SF Symbols for menu and toolbar icons, following Light and Dark Mode.
 - New application icon and settings window.
+- New bundle identifier `io.github.zayrick.quick-symlink`: the Finder extensions must be enabled again, and earlier settings are not carried over.
 
 ### Removed
 
 - The `Copy path from here` menu item.
 - The separate British English localization.
+
+---
+
+Versions 0.10.6 and earlier were released by [Alexander A. Kropotin](https://github.com/ololx) in the original [quick-symlink](https://github.com/ololx/quick-symlink) project.
 
 ## [0.10.6] - 2022-02-16
 

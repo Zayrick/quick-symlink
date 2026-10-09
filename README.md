@@ -1,160 +1,61 @@
-<div align="right">
-  <a href="https://github.com/ololx/quick-symlink/stargazers" target="_blank">
-		<img src="https://img.shields.io/github/stars/ololx/quick-symlink?style=social" alt="Stars earned"/>
-	</a>
-  <img src="https://img.shields.io/github/downloads/ololx/quick-symlink/total?style=social" alt="downloads"/>
-  	<a href="https://github.com/ololx/quick-symlink/discussions" target="_blank">
-		<img src="https://img.shields.io/github/discussions/ololx/quick-symlink?label=welcome%20to%20discussions&logo=github&style=social" alt="discutions"/>
-	</a>
-</div>
-
 # Quick Symlink
 
-The Quick Symlink is a `Finder extension`  which provides a `contextual menu item` for the symbolic links (and other links) creation on macOS. 
+Create symbolic links and hard links right from the Finder context menu, no Terminal required.
 
-[![tag](https://img.shields.io/github/v/tag/ololx/quick-symlink?style=flat&include_prereleases&logo=github)](https://github.com/ololx/quick-symlink/tags) [![release](https://img.shields.io/github/v/release/ololx/quick-symlink?style=flat&include_prereleases&logo=github)](https://github.com/ololx/quick-symlink/releases)
+[![release](https://img.shields.io/github/v/release/Zayrick/quick-symlink?style=flat&logo=github)](https://github.com/Zayrick/quick-symlink/releases/latest)
+[![downloads](https://img.shields.io/github/downloads/Zayrick/quick-symlink/total?style=flat&logo=github)](https://github.com/Zayrick/quick-symlink/releases)
+![platform](https://img.shields.io/badge/macOS-12%2B-blue?style=flat&logo=apple)
+[![license](https://img.shields.io/github/license/Zayrick/quick-symlink?style=flat)](LICENSE)
 
-[![osslifecycle](https://img.shields.io/osslifecycle/ololx/quick-symlink?style=flat)](OSSMETADATA) [![last_commit](https://img.shields.io/github/last-commit/ololx/quick-symlink?style=flat&logo=github)](https://github.com/ololx/quick-symlink/commits) [![release_date](https://img.shields.io/github/release-date/ololx/quick-symlink?style=flat&logo=github)](https://github.com/ololx/quick-symlink/releases)
+Symbolic links are handy for keeping large folders on an external drive while they still appear in their usual place, or for sharing one file between several projects. Quick Symlink makes them a right-click away.
 
-[![licence](https://img.shields.io/github/license/ololx/quick-symlink?style=flat)](LICENCE) [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg?style=flat)](CODE_OF_CONDUCT.md) [![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fololx%2Fquick-symlink.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Fololx%2Fquick-symlink?ref=badge_shield)
+## Features
 
-![repo_size](https://img.shields.io/github/repo-size/ololx/quick-symlink?style=flat&logo=github) ![languages_code_size](https://img.shields.io/github/languages/code-size/ololx/quick-symlink?style=flat&logo=github) ![languages_count](https://img.shields.io/github/languages/count/ololx/quick-symlink?style=flat&logo=github) ![languages_top](https://img.shields.io/github/languages/top/ololx/quick-symlink?style=flat&logo=github)
+- **Make Link**: create links to the selected files and folders next to them.
+- **Paste Link**: copy files in Finder with ⌘C, then paste links to them in another folder.
+- **Move Here and Leave Link**: move the copied files to another folder and leave symbolic links in their original place.
+- **Relative or absolute paths** for symbolic links, so links keep working when you move the folder that contains both the link and its target.
+- Works on every mounted volume, including external drives.
+- Existing files are never overwritten: if the name is taken, the new link is numbered (`name-1`, `name-2`, …).
+- Available in English, Russian and Simplified Chinese.
 
-![platform](https://img.shields.io/badge/platform-OS_X_10.10+-important?style=flat)
+## Installation
 
-## 📇 Table of Contents
+1. Download the latest `Quick-Symlink-<version>.dmg` from [Releases](https://github.com/Zayrick/quick-symlink/releases/latest).
+2. Open it and drag **Quick Symlink** to **Applications**.
+3. Launch Quick Symlink and click **Open Extension Settings…**.
+4. Turn on the Quick Symlink Finder extensions:
+   - **macOS 15 and later**: in *Login Items & Extensions*, click ⓘ next to Quick Symlink.
+   - **macOS 12–14**: in *Extensions › Added extensions*.
 
-- [About](#-about-)
-- [Demo](#-demo-)
-- [Features](#-feature-)
-- [Getting Started](#-getting-started-)
-- [Built With](#-built-with-)
-- [Contributing](#-contributing-)
-- [Code of Conduct](#-code-of-conduct-)
-- [Versioning](#-versioning-)
-- [Authors](#-authors-)
-- [Licensing](#-licensing-)
+   Enable **Symbolic Link Actions**, **Hard Link Actions**, or both.
 
-##  📖 About
+The app is signed with a Developer ID and notarized by Apple.
 
-The Quick Symlink is a Finder Extension  which allows to create symbolic links of selected folders or files. It could be called by right-clicking on selected folders or files and selecting `Quick Symlink` from the contextual menu. **It is a remaster of the other project - `create-symlink`; for more details see https://github.com/ololx/create-symlink.**
+## Usage
 
-### Motivation
+Right-click files, folders or the background of a Finder window and open the **Symbolic Links** or **Hard Links** submenu. The same menus are available from Finder toolbar buttons, which you can add with *View › Customize Toolbar…*.
 
-For me the symbolic links is a useful feature of macOS. They can be especially useful when it's needed to store the `Documents` folder on a hard drive or SD card, but on the ssd to create a just link to this folder.
-Of course, creating symbolic links via the terminal is very easy and convenient. But this does not negate the fact that it could be even easier and more comfortable through interaction with the GUI.
+| Menu item | What it does |
+| --- | --- |
+| Make Link | Creates a link to each selected item in the same folder. |
+| Paste Link | Creates links to the files copied with ⌘C in the current folder. |
+| Move Here and Leave Link | Moves the copied files to the current folder and leaves symbolic links in their place. *(Symbolic Links only)* |
+| Use Relative Paths | Toggles relative paths for new symbolic links, on by default. Also available in the app window. *(Symbolic Links only)* |
 
-## 📸 Demo
+> Hard links can only point to files on the same volume, and macOS doesn't allow hard links to folders.
 
-This GIF demonstrates how the `Quick Symlink` allows quite simple to select files or folders and paste symlink in the current directory.
+## Building
 
-<img src="https://github.com/ololx/quick-symlink/blob/assets/demo/quick-symlink-demo-2.gif?raw=true" width="100%"/>
+Requires Xcode 26 or later.
 
-This GIF demonstrates how the `Quick Symlink` allows quite simple to copy files or folders and paste symlink somewhere.
-
-<img src="https://github.com/ololx/quick-symlink/blob/assets/demo/quick-symlink-demo-1.gif?raw=true" width="100%"/>
-
-This GIF demonstrates how the `Quick Symlink` allows quite simple to copy files or folders, paste them somewhere, and replace them with symlinks.
-
-<img src="https://github.com/ololx/quick-symlink/blob/assets/demo/quick-symlink-demo-replace-with-link.gif?raw=true" width="100%"/>
-
-<details close>
-    <summary>These GIFs demonstrate the `Quick Symlink` localization.</summary>
-	<img src="https://github.com/ololx/quick-symlink/blob/assets/demo/quick-symlink-demo-localization-1.gif?raw=true" width="100%"/>
-	<img src="https://github.com/ololx/quick-symlink/blob/assets/demo/quick-symlink-demo-localization-2.gif?raw=true" width="100%"/>
-</details>
-
-## 🎚 Features
-
-- Create a symbolic links in a several clicks via the context menu instead of the terminal promt:
-  - Select files or folders and create symlinks for them.
-  - Copy files or folders and paste symlinks somewhere.
-  - Copy files or folders, paste them somewhere, and replace them with symlinks.
-
-- Create a hard links in a several clicks via the context menu instead of the terminal promt:
-  - Select files or folders and create hard links for them.
-  - Copy files or folders and paste hard links somewhere.
-
-### To Do
-
-- For more information on an upcoming development, please read the [todo](TODO.md) list.
-
-### Changelog
-
-- For more information on releases, features and changes, please read the [changelog](CHANGELOG.md) notes.
-
-## 🚦 Getting Started
-
-These instructions allow to get a copy of this project and run it on a local machine.
-
-### Prerequisites
-
-Before using it, make sure that follows software are installed on the local machine:
-
-- **[OS X 10.10+](https://www.apple.com/ru/macos/what-is/)** - the operating system under which the extention is executing.
-
-If any of the listed programs is not installed, then it can be installed by instruction as described below.
-
-1. #### macOS 12+
-    - Install macOS 12+ by [this](https://support.apple.com/ht201372) instruction.
-
-### Installing
-
-In order to install it is quite simple to:
-
-1. Download executable file from releases (or compile it from the sources).
-2. Go to the directory where you download this tool (optionally):
-
-   - via Finder.
-   - via Terminal prompt.
-
-   ```bash
-   cd /{path to parent dir with this tool}/
-   ```
-
-3. Launch the tool in macOS (optionally):
-
-   - via double-click on `Quick Symlink.app`.
-   - via Terminal prompt.
-
-   ```bash
-   open "Quick Symlink.app"
-   ```
-
-4. Click "Open Extension Settings…" in the app window (or open `System Settings > General > Login Items & Extensions`), click ⓘ next to `Quick Symlink` and enable the follows extensions:
-  4.1. `Symbolic Link Actions` - for the symlink actions.
-  4.2. `Hard Link Actions` - for the hard link actions.
-
-**Otherwise, it's possible to install and remove the extention using the actual extension bundled into the app.**
-
-1. To install and approve the extension, run this:
-
-```bash
-pluginkit -a "Quick Symlink.app/Contents/PlugIns/SymbolicLinkExtension.appex/"
-pluginkit -a "Quick Symlink.app/Contents/PlugIns/HardLinkExtension.appex/"
+```sh
+Scripts/build-app.sh                                   # build/Quick Symlink.app, signed to run on this Mac
+DEVELOPMENT_TEAM=<team ID> Scripts/build-app.sh        # signed with your Apple Development certificate
+Scripts/package-dmg.sh 1.2.3                           # build/Quick-Symlink-1.2.3.dmg
 ```
 
-2. To remove it, run this:
-
-```bash
-pluginkit -r "Quick Symlink.app/Contents/PlugIns/SymbolicLinkExtension.appex/"
-pluginkit -r "Quick Symlink.app/Contents/PlugIns/HardLinkExtension.appex/"
-```
-
-5. [OPTIONAL] Check/Uncheck the checkbox on the Application window "Use relative paths for symbolic links" to use the relative path instead absolute path for the creating symlinks. **By default it's enabled**
-
-<img src="https://github.com/ololx/quick-symlink/blob/assets/use-relative.png?raw=true" width="30%"/>
-
-### Building
-
-Open `Quick Symlink.xcodeproj` in Xcode 16+ and run the `Quick Symlink` scheme, or build a Release app into `build/` from the Terminal:
-
-```bash
-Scripts/build-app.sh                                 # signed to run on this Mac only
-DEVELOPMENT_TEAM=<your team ID> Scripts/build-app.sh # signed with your Apple Development certificate
-```
-
-The project is organized as follows:
+Or open `Quick Symlink.xcodeproj` and run the **Quick Symlink** scheme.
 
 ```
 App/                  the app: settings window
@@ -165,92 +66,27 @@ Shared/               code and strings used by the app and both extensions
   Finder/             Finder menu, toolbar item and copied files
   Links/              link creation and relative paths
 Tests/                unit tests
+Scripts/              build and DMG packaging
 ```
 
-### Downloading
+## Releasing
 
-For the downloading executable file or sources to a local machine, just use the follows link and choose a required release:
+Releases are published by [GitHub Actions](.github/workflows/release.yml):
 
-```http
-https://github.com/ololx/quick-symlink/releases/
-```
+1. Update [RELEASE.md](RELEASE.md): the first line is the version (`# 1.2.3`), and everything below it becomes the release notes.
+2. Add the same notes to [CHANGELOG.md](CHANGELOG.md).
+3. Push to `main`. The workflow builds, signs and notarizes the DMG, then publishes it as release `v1.2.3`.
 
-### Cloning
+A release can also be started by hand from the Actions tab. In that case the release notes are the commit titles since the last tag.
 
-For the cloning this repository to a local machine, just use the follows link:
+## Contributing
 
-```http
-https://github.com/ololx/quick-symlink.git
-```
+Contributions are welcome. See [CONTRIBUTING.md](CONTRIBUTING.md) and the [code of conduct](CODE_OF_CONDUCT.md). Planned work is listed in [TODO.md](TODO.md), and past changes in the [changelog](CHANGELOG.md).
 
-### Using
+## Acknowledgements
 
-This tool allows to:
-<details close>
-    <summary>Create symlinks in the current directory</summary>
-1. Select folders or files for which a symbolic link is needed.<br/>
-2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Symbolic Links --> Make Link`.<br/>
-</details>
+Quick Symlink started as a fork of [quick-symlink](https://github.com/ololx/quick-symlink) by [Alexander A. Kropotin](https://github.com/ololx). Thanks for the original idea and years of work on it.
 
-<details close>
-    <summary>Create symlinks in another directory</summary>
-1. Select folders or files for which a symbolic link is needed.<br/>
-2. Copy them with `⌘C`.<br/>
-3. Go to a destination folder.<br/>
-4. Call the contextual menu by right-clicking on the folder.<br/>
-5. Select menu item `Symbolic Links --> Paste Link`.<br/>
-</details>
+## License
 
-<details close>
-    <summary>Replace objects with symbolic links</summary>
-1. Select folders or files for which a symbolic link is needed.<br/>
-2. Copy them with `⌘C`.<br/>
-3. Go to a destination folder.<br/>
-4. Call the contextual menu by right-clicking on the folder.<br/>
-5. Select menu item `Symbolic Links --> Move Here and Leave Link`.<br/>
-</details>
-
-<details close>
-    <summary>Create hard links in the current directory</summary>
-1. Select folders or files for which a symbolic link is needed.<br/>
-2. Call the contextual menu by the right-clicking on selected.<br/>
-3. Select menu item `Hard Links --> Make Link`.<br/>
-</details>
-
-<details close>
-    <summary>Create symlinks in another directory</summary>
-1. Select folders or files for which a symbolic link is needed.<br/>
-2. Copy them with `⌘C`.<br/>
-3. Go to a destination folder.<br/>
-4. Call the contextual menu by right-clicking on the folder.<br/>
-5. Select menu item `Hard Links --> Paste Link`.<br/>
-</details>
-
-## 🛠 Built With
-
-- **[Xcode](https://developer.apple.com/xcode/)** - the IDE for the `Finder Sync Extension` development.
-
-## 🎉 Contributing
-
-If you want to contribute this project - you are welcome and have fun.
-Please visit the [contributing](CONTRIBUTING.md) section for details on this code of conduct, and the process for submitting pull requests.
-
-## 📝 Code of Conduct
-
-In order to ensure that all is welcoming, please review and abide by the [code of conduct](CODE_OF_CONDUCT.md).
-
-## 🗒 Versioning
-
-For the versioning is used [Semantic Versioning](http://semver.org/). For the versions available, see the [changelog](CHANGELOG.md) or the tags on this repository.
-
-## ©️ Authors
-
-* **Alexander A. Kropotin** - *Initial work* - [ololx](https://github.com/ololx).
-
-## 🔏 Licensing
-
-This project is licensed under the MIT license - see the [lisence](LICENSE) document for details.
-
-
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fololx%2Fquick-symlink.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fololx%2Fquick-symlink?ref=badge_large)
+[MIT](LICENSE)

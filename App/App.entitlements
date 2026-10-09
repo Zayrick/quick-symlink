@@ -6,7 +6,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>io.github.ololx.QuickSymlink</string>
+		<string>92DWFLY372.io.github.zayrick.quick-symlink</string>
 	</array>
 </dict>
 </plist>

@@ -447,12 +447,12 @@
 				GENERATE_INFOPLIST_FILE = "YES";
 				INFOPLIST_KEY_CFBundleDisplayName = "Quick Symlink";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin, 2026 Zayrick.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ololx.quick-symlink";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zayrick.quick-symlink";
 				PRODUCT_MODULE_NAME = "QuickSymlink";
 				PRODUCT_NAME = "Quick Symlink";
 			};
@@ -467,12 +467,12 @@
 				GENERATE_INFOPLIST_FILE = "YES";
 				INFOPLIST_KEY_CFBundleDisplayName = "Quick Symlink";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin, 2026 Zayrick.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ololx.quick-symlink";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zayrick.quick-symlink";
 				PRODUCT_MODULE_NAME = "QuickSymlink";
 				PRODUCT_NAME = "Quick Symlink";
 			};
@@ -485,13 +485,13 @@
 				GENERATE_INFOPLIST_FILE = "YES";
 				INFOPLIST_FILE = "Extensions/SymbolicLink/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Symbolic Link Actions";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin, 2026 Zayrick.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ololx.quick-symlink.soft-link-actions-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zayrick.quick-symlink.symbolic-link-extension";
 				PRODUCT_NAME = "SymbolicLinkExtension";
 				SKIP_INSTALL = "YES";
 			};
@@ -504,13 +504,13 @@
 				GENERATE_INFOPLIST_FILE = "YES";
 				INFOPLIST_FILE = "Extensions/SymbolicLink/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Symbolic Link Actions";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin, 2026 Zayrick.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ololx.quick-symlink.soft-link-actions-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zayrick.quick-symlink.symbolic-link-extension";
 				PRODUCT_NAME = "SymbolicLinkExtension";
 				SKIP_INSTALL = "YES";
 			};
@@ -523,13 +523,13 @@
 				GENERATE_INFOPLIST_FILE = "YES";
 				INFOPLIST_FILE = "Extensions/HardLink/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Hard Link Actions";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin, 2026 Zayrick.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ololx.quick-symlink.hard-link-actions-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zayrick.quick-symlink.hard-link-extension";
 				PRODUCT_NAME = "HardLinkExtension";
 				SKIP_INSTALL = "YES";
 			};
@@ -542,13 +542,13 @@
 				GENERATE_INFOPLIST_FILE = "YES";
 				INFOPLIST_FILE = "Extensions/HardLink/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Hard Link Actions";
-				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin. All rights reserved.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2021 Alexander A. Kropotin, 2026 Zayrick.";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ololx.quick-symlink.hard-link-actions-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zayrick.quick-symlink.hard-link-extension";
 				PRODUCT_NAME = "HardLinkExtension";
 				SKIP_INSTALL = "YES";
 			};
@@ -560,7 +560,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GENERATE_INFOPLIST_FILE = "YES";
 				MACOSX_DEPLOYMENT_TARGET = "14.0";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ololx.quick-symlink.tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zayrick.quick-symlink.tests";
 				PRODUCT_NAME = "QuickSymlinkTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Symlink.app/Contents/MacOS/Quick Symlink";
 			};
@@ -572,7 +572,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GENERATE_INFOPLIST_FILE = "YES";
 				MACOSX_DEPLOYMENT_TARGET = "14.0";
-				PRODUCT_BUNDLE_IDENTIFIER = "io.github.ololx.quick-symlink.tests";
+				PRODUCT_BUNDLE_IDENTIFIER = "io.github.zayrick.quick-symlink.tests";
 				PRODUCT_NAME = "QuickSymlinkTests";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Quick Symlink.app/Contents/MacOS/Quick Symlink";
 			};

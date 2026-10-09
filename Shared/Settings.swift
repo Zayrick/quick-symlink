@@ -8,7 +8,7 @@ import Foundation
 /// Preferences shared by the app and the Finder extensions through the app group.
 enum Settings {
 
-    static let store = UserDefaults(suiteName: "io.github.ololx.QuickSymlink") ?? .standard
+    static let store = UserDefaults(suiteName: "92DWFLY372.io.github.zayrick.quick-symlink") ?? .standard
 
     static let useRelativePathsKey = "relative-path-strategy"
 
