@@ -4,11 +4,31 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](http://semver.org/).
 
-## [Unreleased] - yyyy-mm-dd
+## [Unreleased]
+
+## [0.11.0] - 2026-10-09
+
+### Added
+
+- Simplified Chinese localization.
+- `Open Extension Settings…` button that opens where the Finder extensions are enabled (Login Items & Extensions on macOS 15 and later).
+- Number new links (`name-1`, `name-2`, …) instead of overwriting existing files.
+- Signed and notarized DMG installer, published by GitHub Actions.
 
 ### Changed
 
-- Refactor application.
+- Rewrite the application and the Finder extensions in Swift and SwiftUI.
+- Require macOS 12 or later.
+- Rename the menus to `Symbolic Links` and `Hard Links` with the `Make Link`, `Paste Link`, `Move Here and Leave Link` and `Use Relative Paths` items.
+- `Paste Link` and `Move Here and Leave Link` use the files copied in Finder with ⌘C.
+- `Move Here and Leave Link` moves the item back if the link can't be created.
+- Use SF Symbols for menu and toolbar icons, following Light and Dark Mode.
+- New application icon and settings window.
+
+### Removed
+
+- The `Copy path from here` menu item.
+- The separate British English localization.
 
 ## [0.10.6] - 2022-02-16
 
