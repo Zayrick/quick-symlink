@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" fill="none">
-  <title>02-fold-and-details</title>
+  <title>02-details</title>
   <desc>Unmasked, opaque vector shapes on a transparent canvas. Set the background and material effects in Icon Composer.</desc>
-  <g transform="translate(512 512) scale(1.08) translate(-512 -512)"><path d="M624 172V278Q624 326 672 326H773Q770 310 760 298L646 184Q636 174 624 172Z" fill="#C7DEE2"/>
+  <g transform="translate(512 512) scale(1.08) translate(-512 -512)">
       <rect x="338" y="386" width="228" height="28" rx="14" fill="#BCD1D6"/>
       <rect x="338" y="440" width="152" height="28" rx="14" fill="#BCD1D6"/></g>
 </svg>
