@@ -1,0 +1,58 @@
+{
+  "fill-specializations" : [
+    {
+      "value" : {
+        "linear-gradient" : [
+          "srgb:0.16471,0.61176,0.66667,1.00000",
+          "srgb:0.07059,0.30196,0.40392,1.00000"
+        ],
+        "orientation" : {
+          "start" : { "x" : 0.5, "y" : 0 },
+          "stop" : { "x" : 0.5, "y" : 1 }
+        }
+      }
+    },
+    {
+      "appearance" : "dark",
+      "value" : {
+        "linear-gradient" : [
+          "srgb:0.11373,0.21961,0.27059,1.00000",
+          "srgb:0.05098,0.12549,0.17255,1.00000"
+        ],
+        "orientation" : {
+          "start" : { "x" : 0.5, "y" : 0 },
+          "stop" : { "x" : 0.5, "y" : 1 }
+        }
+      }
+    }
+  ],
+  "groups" : [
+    {
+      "layers" : [
+        {
+          "image-name" : "03-shortcut-arrow.svg",
+          "name" : "03-shortcut-arrow"
+        }
+      ],
+      "shadow" : { "kind" : "neutral", "opacity" : 0.5 },
+      "translucency" : { "enabled" : true, "value" : 0.5 }
+    },
+    {
+      "layers" : [
+        {
+          "image-name" : "02-fold-and-details.svg",
+          "name" : "02-fold-and-details"
+        },
+        {
+          "image-name" : "01-document.svg",
+          "name" : "01-document"
+        }
+      ],
+      "shadow" : { "kind" : "neutral", "opacity" : 0.5 },
+      "translucency" : { "enabled" : true, "value" : 0.5 }
+    }
+  ],
+  "supported-platforms" : {
+    "squares" : [ "macOS" ]
+  }
+}
