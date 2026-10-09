@@ -8,10 +8,10 @@
 - [x]  Use relative path instead absolute path in symlink target URL.
 - [x]  Add setting - select the default path for links: relative or absolute
 - [x]  Develop additional `Finder extension`  which allows to create a `hard links` for selected folders and files via contextual menu.
-- [ ] Add icons for context menu items
-- [ ] Add icons for `Finder Toolbar` items
-- [ ] Make a new application icon
-- [ ] Make icons (`Finder Toolbar`) more suitable for Big Sur and above
+- [x] Add icons for context menu items
+- [x] Add icons for `Finder Toolbar` items
+- [x] Make a new application icon
+- [x] Make icons (`Finder Toolbar`) more suitable for Big Sur and above
 - [ ] Implement the ability to disable only the context menu extension (may need to be implemented as a separate extension)
 - [ ] Implement the ability to disable only `Finder Toolbar` extension (may need to be implemented as a separate extension)
 - [ ] Combine context menu for links (symlinks and hard links)
@@ -29,9 +29,9 @@
   - [ ] d1) Сheck the symlink for the existence of the source and fix the source path
   - [ ] d2) Сheck the hard link for the existence of the source and fix the source path
   - [ ] d3) Сheck the aliasfor the existence of the source and fix the source path
-- [ ]  Add the ability to perform actions with administrator privileges
-- [ ]  Add localization for other languages
-- [ ]  Refactor app
+  - [ ]  Add the ability to perform actions with administrator privileges
+  - [x]  Add localization for other languages
+  - [x]  Refactor app
 
 ---
 
